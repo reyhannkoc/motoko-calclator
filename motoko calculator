@@ -1,0 +1,29 @@
+actor calculator{
+  var sum: Int = 0;
+
+  public func add(x: Int) : async Int {
+    sum += x;
+    return sum;
+  };
+  public func subtract(x: Int) : async Int {
+    sum -= x;
+    return sum;
+  };
+  public func multiply(x: Int) : async Int {
+    sum *= x;
+    return sum;
+  };
+  public func divide (x: Int) : async Int {
+    
+  if (x == 0) {
+    return 0;
+  }
+  else{
+    sum /= x;
+    sum
+  };
+};
+  public func clear() : async () {
+    sum := 0;
+  };
+};
